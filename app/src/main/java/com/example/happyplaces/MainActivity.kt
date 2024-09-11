@@ -25,12 +25,10 @@ class MainActivity : AppCompatActivity() {
         val toolbar: androidx.appcompat.widget.Toolbar = binding.toolbarMain
         toolbar.setTitle("Happy Places")
 
+
         binding.fabAddHappyPlace.setOnClickListener(){
             val intent = Intent(this, AddHappyPlaceActivity::class.java)
             startActivity(intent)
         }
-
-
-
     }
 }

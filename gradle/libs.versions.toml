@@ -9,6 +9,10 @@ appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
+circleimageview = "3.1.0"
+dexter = "6.2.3"
+permissionsdispatcher = "4.8.0"
+kapt = "2.0.20"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -19,8 +23,15 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+circleimageview = {module = "de.hdodenhof:circleimageview", version.ref = "circleimageview"}
+dexter = {module = "com.karumi:dexter", version.ref="dexter"}
+permissionsdispatcher= {module = "com.github.permissions-dispatcher:permissionsdispatcher", version.ref="permissionsdispatcher"}
+kapt= {module="com.github.permissions-dispatcher:permissionsdispatcher-processor", version.ref="permissionsdispatcher"}
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+#kotlin-kapt = {id = "org.jetbrains.kotlin.kapt", version.ref= "kapt"}
+
 
